@@ -1,0 +1,250 @@
+<!DOCtype HTML>
+<html>
+
+	<head>
+		<title>Gallery</title>
+
+<style>
+ /* ==================== */
+/* = The 1Kb CSS Grid = */
+/* ==================== */
+
+.grid_1 { width:80px; }
+.grid_2 { width:140px; }
+.grid_3 { width:220px; }
+.grid_4 { width:300px; }
+.grid_5 { width:380px; }
+.grid_6 { width:460px; }
+.grid_7 { width:500px; }
+.grid_8 { width:620px; }
+.grid_9 { width:700px; }
+.grid_10 { width:780px; }
+.grid_11 { width:860px; }
+.grid_12 { width:940px; }
+
+.column { /* 10px margin on BOTH sides, resulting in a 20px gutter between columns */
+	margin: 0 10px;
+	float: left;
+}
+.row { /* center the row on the page, clear the interior contents with overflow:hidden hack */
+	width: 960px;
+}
+.row .row {
+	margin-top: 20px;
+	width: auto;
+}
+
+.below {
+	position: absolute;
+	top: 100%;
+	background-color: white;
+	left: 50%;
+	margin-left: -480px;
+	margin-bottom: -230px;
+	}
+
+body {
+	margin: 160px 0 0 0;
+	background-color: white;
+	}
+	
+.title {
+	margin: 0 0 20px 20px;
+	float: left;
+	color: #ffffff;
+	}
+	
+h1 {
+	font-size:32pt;
+	text-decoration:none;
+	font-weight:normal;
+	}
+	
+h2 {
+	font-size:20pt;
+	text-decoration:none;
+	font-weight:normal;
+	}
+	
+h3 {
+	font-family: 'Oswald', serif;
+	font-size:22pt;
+	font-style: normal;
+	font-weight: normal;
+	display: inline;
+	margin: 0;
+	}
+	
+h4 {
+	font-family: 'Cormorant Garamond', serif;
+	font-size:22pt;
+	font-style: italic;
+	font-weight: normal;
+	display: inline;
+	margin: 0;
+	}
+	
+	
+h1, h2 {
+	font-family:'Oswald', sans-serif;
+	display:inline;
+	margin: 0;
+	}	
+	
+hr {
+	height: 12px;
+	margin: 0;
+	visibility: hidden;
+	}
+	
+.text_1 {
+	position: fixed;
+	top: 50%;
+	margin-top:-290px;
+	width:100%;
+	text-align:center;
+	}
+	
+.text_2 {
+	height: 460px;
+	position: fixed;
+	top: 50%;
+	margin-top:-230px;
+	width:100%;
+	text-align:center;
+	}
+	
+.text_3 {
+	position: fixed;
+	top: 50%;
+	margin-top: 225px;
+	width:100%;
+	text-align:center;
+	z-index: 500;
+	}
+	
+/* Gallery */
+
+
+div a img {
+	-webkit-transition-duration: .2s;
+	float:left;
+	z-index: 1000;
+	}
+	
+div a img:hover {
+	transition-duration: .2s;
+	-webkit-transition-duration: .2s;
+	-moz-box-shadow: 0px 0px 5px 5px #888;
+	-webkit-box-shadow: 0px 0px 5px 5px #888;
+	box-shadow: 0px 0px 5px 5px #888;
+	}
+	
+/* structure */
+
+		.roundedcorners {
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		}
+
+		.roundedbottom {
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		}
+		
+		.roundedtop {
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		}
+		
+
+</style>		
+
+	<link rel="stylesheet" type="text/css" href="css/shadowbox.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Oswald|Cormorant+Garamond:400,700i" rel="stylesheet"> 
+	
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/shadowbox.js"></script>
+	<script type="text/javascript" src="js/gallery.js"></script>
+	<script type="text/javascript">
+	Shadowbox.init();
+	</script>
+		
+	</head>
+
+
+<body>
+
+<div class="text_1">
+	<h1>Hello, I am Jorden Gibby</h1>
+</div>
+
+<div class="text_2">
+	</br><h1>A Graphic and Web Designer,</h1>
+	</br><h1>Illustrator & Photo-manipulator</h1>
+	</br><h3>living and working in Nashville, TN.</h3>
+	</br>
+	</br><h4>I enjoy challanging my skills.</h4>
+	</br><h4>Finding something I haven't done,</h4>
+	</br><h4>then doing that thing.</h4>
+	</br>
+	</br><h2>You can contact me at</h2>
+	<a href="mailto:jordengibby@gmail.com" style="font-family:'Oswald', sans-serif; font-size:20pt; margin:0; color: black; color">JordenGibby@gmail.com</a>
+	</br>
+	</br><h3>Or scroll down to see</h3>
+</div>
+
+<div class="text_3">
+	<h1>My Portfolio</h1>
+</div>
+
+							<!--Gallery-->
+<div class="row below">
+	
+	<div class="year">
+	
+
+							<!-- large thumb -->
+		<div class="grid_4 column" style="height:300px;" id="largethumb">
+			<img class="roundedcorners" id="large_pic2013" src="img/start_gallery2013.jpg">
+		</div>
+		
+	
+							<!-- gallery selection -->	
+		<div id="2013">
+			<div class="column grid_2" id="2013">
+				<div class="img_container" id="32pg"><a href="img/full/32pg.jpg" rel="shadowbox[2013]" title="32-page Educational Workbook Series"><img class=	"roundedcorners smallthumb"  src="img/thumb_1/32pg.jpg"/></a>
+				</div>
+				<div class="img_container" id="SeekFind"><a href="img/full/SeekFind.jpg" rel="shadowbox[2013]" title="Seek and Find Coloring Book Series"><img style="margin:20px 0 0;" class="roundedcorners smallthumb"  src="img/thumb_1/SeekFind.jpg"/></a>
+				</div>
+			</div>
+				<div class="img_container column" id="SolarSystem"><a href="img/full/SolarSystem.jpg" rel="shadowbox[2013]" title="Solar System Poster"><img class="roundedcorners smallthumb"  src="img/thumb_1/SolarSystem.jpg"/></a>
+				</div>
+				<div class="img_container column" id="LayersOfEarth"><a href="img/full/LayersOfEarth.jpg" rel="shadowbox[2013]" title="Layers of the Earth Poster"><img class="roundedcorners smallthumb"  src="img/thumb_1/LayersOfEarth.jpg"/></a>
+				</div>
+			<div class="column grid_2" id="2013">
+				<div class="img_container" id="TestPrep"><a href="img/full/TestPrep.jpg" rel="shadowbox[2013]" title="Test Prep Workbooks"><img class="roundedcorners smallthumb"  src="img/thumb_1/TestPrep.jpg"/></a>
+				</div>
+				<div class="img_container" id="jbt"><a href="img/full/jbt.jpg" rel="shadowbox[2013]" title="JBT Christmas Card"><img style="margin:20px 0 0;" class="roundedcorners smallthumb"  src="img/thumb_1/jbt.jpg"/></a>
+				</div>
+			</div>	
+				<div class="img_container column" id="Wedding"><a href="img/full/Wedding.jpg" rel="shadowbox[2013]" title="Wedding Invitations"><img style="margin-top:20px;" class=	"roundedcorners smallthumb"  src="img/thumb_1/Wedding.jpg"/></a>
+				</div>
+				<div class="img_container column" id="SillySymbols"><a href="img/full/SillySymbols.jpg" rel="shadowbox[2013]" title="Silly Symbols Activity Book"><img style="margin-top:20px;" class= "roundedcorners smallthumb"  src="img/thumb_1/SillySymbols.jpg"/></a>
+				</div>
+				<div class="img_container column" id="LoneOak"><a href="img/full/LoneOak.jpg" rel="shadowbox[2013]" title="Lone Oak Mailers"><img style="margin-top:20px;" class=	"roundedcorners smallthumb grid_2"  src="img/thumb_1/LoneOak.jpg"/></a>
+				</div>
+				<div class="img_container column" id="CatfishHouse"><a href="img/full/CatfishHouse.jpg" rel="shadowbox[2013]" title="Catfish House Menu"><img style="margin-top:20px;" class= "roundedcorners smallthumb"  src="img/thumb_1/CatfishHouse.jpg"/></a>
+				</div>
+		</div>
+		
+	</div>
+	
+</div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,91 @@
+body {
+	background-image:url('../img/medium_exa.png');
+	}
+	
+@font-face {
+  font-family: "junction";
+  src: url("font/junction/Junction_webfont.eot");
+  src: local("☺"),
+    url("font/junction/Junction_webfont.woff") format("woff"),
+    url("font/junction/Junction_webfont.otf") format("opentype"),
+    url("font/junction/Junction_webfont.svg#Junction_webfont") format("svg");
+  }
+  
+a{
+	text-decoration:none;
+	color:white;
+	}
+	
+h1 {
+	font-family:junction, sans-serif;
+	font-size: 42pt;
+	color:white;
+	}
+	
+/* Navigation  */
+#nav {
+	background-color:black;
+	position:absolute;
+	}
+
+#logo{
+	height:150px;
+	}
+	
+#navigation {
+	font-family:junction, sans-serif;
+	font-size:24pt;
+	color:white;
+	text-align:center;
+	margin-bottom:20px;
+	margin-top:20px;
+	}
+	
+#navigation a{
+	vertical-align:middle;
+	}
+
+#navigation div:hover{
+	background-color:#383838;
+	border-radius:20px;
+	-moz-border-radius:20px;
+	}
+	
+#current{
+	color:#383838;
+	}
+	
+.link {
+	padding-top:8px;
+	margin-top:5px;
+	margin-bottom:5px;
+	}
+	
+/* Gallery */
+
+div a img {
+	-webkit-transition-duration: .2s;
+	margin:10px 10px;
+	float:left;
+	}
+	
+div a img:hover {
+	transition-duration: .2s;
+	-webkit-transition-duration: .2s;
+	-moz-box-shadow: 0px 0px 5px 5px #888;
+	-webkit-box-shadow: 0px 0px 5px 5px #888;
+	box-shadow: 0px 0px 5px 5px #888;
+	}
+	
+#largethumb{
+	margin-top:10px;
+	margin-bottom:10px;
+	}
+/* structure */
+
+.roundedcorners{
+	border-radius:5px;
+	-moz-border-radius:5px;
+	}
+	
+#filler{ height:100%;}
